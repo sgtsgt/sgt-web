@@ -1,0 +1,1266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy — Telecom Toolkit by Samskill Global Telecom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --navy: #071e3d;
+        --navy-mid: #0e3460;
+        --blue: #1558a8;
+        --blue-bright: #2373cc;
+        --accent: #3a96f0;
+        --accent-light: #6db8ff;
+        --white: #ffffff;
+        --off-white: #f4f7fb;
+        --pale-blue: #e6f0fb;
+        --text-body: #2e4a68;
+        --text-muted: #8aaace;
+        --border: rgba(53, 130, 210, 0.15);
+        --green: #3ed97e;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "DM Sans", sans-serif;
+        background: var(--off-white);
+        color: var(--text-body);
+        line-height: 1.7;
+        overflow-x: hidden;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: "Sora", sans-serif;
+      }
+
+      /* ── NAV ── */
+      nav {
+        background: var(--navy);
+        padding: 0 5%;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--border);
+        position: sticky;
+        top: 0;
+        z-index: 50;
+      }
+      .nav-logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+      }
+      .nav-logo-icon {
+        width: 34px;
+        height: 34px;
+        border-radius: 8px;
+        background: linear-gradient(135deg, var(--blue), var(--accent));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .nav-logo-icon svg {
+        width: 18px;
+        height: 18px;
+        stroke: white;
+        fill: none;
+        stroke-width: 2;
+      }
+      .nav-logo-text {
+        font-family: "Sora", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        color: white;
+        line-height: 1.2;
+      }
+      .nav-logo-text span {
+        display: block;
+        font-size: 10px;
+        font-weight: 300;
+        color: var(--text-muted);
+        letter-spacing: 0.06em;
+      }
+      .nav-back {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 13px;
+        color: var(--text-muted);
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+      .nav-back:hover {
+        color: white;
+      }
+      .nav-back svg {
+        width: 14px;
+        height: 14px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2.5;
+      }
+
+      /* ── HERO BANNER ── */
+      .hero-banner {
+        background: linear-gradient(
+          135deg,
+          var(--navy) 0%,
+          var(--navy-mid) 100%
+        );
+        padding: 64px 5% 56px;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero-banner::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(
+            ellipse at 80% 50%,
+            rgba(58, 150, 240, 0.12) 0%,
+            transparent 60%
+          ),
+          linear-gradient(rgba(58, 150, 240, 0.04) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(58, 150, 240, 0.04) 1px, transparent 1px);
+        background-size:
+          auto,
+          50px 50px,
+          50px 50px;
+        pointer-events: none;
+      }
+
+      .hero-inner {
+        position: relative;
+        z-index: 1;
+        max-width: 780px;
+      }
+
+      .hero-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        background: rgba(58, 150, 240, 0.12);
+        border: 1px solid rgba(58, 150, 240, 0.28);
+        border-radius: 100px;
+        padding: 5px 14px;
+        font-size: 11.5px;
+        font-weight: 500;
+        color: var(--accent-light);
+        margin-bottom: 1.25rem;
+        letter-spacing: 0.04em;
+      }
+      .hero-chip svg {
+        width: 13px;
+        height: 13px;
+        stroke: var(--accent-light);
+        fill: none;
+        stroke-width: 2.5;
+      }
+
+      .hero-banner h1 {
+        font-size: clamp(1.9rem, 4vw, 2.9rem);
+        font-weight: 800;
+        color: white;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        margin-bottom: 1rem;
+      }
+      .hero-banner h1 span {
+        color: var(--accent);
+      }
+
+      .hero-banner p {
+        font-size: 15.5px;
+        color: var(--text-muted);
+        max-width: 520px;
+        line-height: 1.7;
+        font-weight: 300;
+        margin-bottom: 2rem;
+      }
+
+      .hero-meta {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+      }
+      .hero-meta-item {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        font-size: 12.5px;
+        color: var(--text-muted);
+      }
+      .hero-meta-item svg {
+        width: 14px;
+        height: 14px;
+        stroke: var(--accent);
+        fill: none;
+        stroke-width: 2;
+      }
+
+      /* ── ZERO DATA BANNER ── */
+      .zero-data-bar {
+        background: white;
+        border-bottom: 1px solid var(--border);
+        padding: 0 5%;
+      }
+      .zero-data-inner {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 20px 0;
+        display: flex;
+        gap: 0;
+        flex-wrap: wrap;
+      }
+      .zd-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 28px 8px 0;
+        margin-right: 28px;
+        border-right: 1px solid var(--border);
+        flex-shrink: 0;
+      }
+      .zd-item:last-child {
+        border-right: none;
+      }
+      .zd-icon {
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+        background: var(--pale-blue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .zd-icon svg {
+        width: 15px;
+        height: 15px;
+        stroke: var(--blue);
+        fill: none;
+        stroke-width: 2;
+      }
+      .zd-label {
+        font-family: "Sora", sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--navy);
+      }
+      .zd-sub {
+        font-size: 11px;
+        color: #6a88a8;
+        margin-top: 1px;
+      }
+
+      /* ── LAYOUT ── */
+      .page-body {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 56px 5% 80px;
+      }
+
+      /* ── CONTENT ── */
+      .content {
+        animation: fadeUp 0.5s 0.1s ease both;
+      }
+
+      /* Section wrappers */
+      .policy-section {
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 36px 36px 32px;
+        margin-bottom: 20px;
+        scroll-margin-top: 88px;
+      }
+
+      .section-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 10.5px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--blue);
+        background: var(--pale-blue);
+        border-radius: 5px;
+        padding: 3px 10px;
+        margin-bottom: 12px;
+      }
+      .section-tag svg {
+        width: 11px;
+        height: 11px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2.5;
+      }
+
+      .policy-section h2 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--navy);
+        margin-bottom: 1rem;
+        line-height: 1.3;
+        letter-spacing: -0.01em;
+      }
+
+      .policy-section p {
+        font-size: 14.5px;
+        color: var(--text-body);
+        line-height: 1.75;
+        margin-bottom: 1rem;
+      }
+      .policy-section p:last-child {
+        margin-bottom: 0;
+      }
+
+      .policy-section ul,
+      .policy-section ol {
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 1rem;
+      }
+      .policy-section ul li,
+      .policy-section ol li {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        font-size: 14.5px;
+        color: var(--text-body);
+        line-height: 1.65;
+      }
+      .policy-section ul li::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--accent);
+        flex-shrink: 0;
+        margin-top: 8px;
+      }
+      .policy-section ol {
+        counter-reset: item;
+      }
+      .policy-section ol li {
+        counter-increment: item;
+      }
+      .policy-section ol li::before {
+        content: counter(item);
+        font-family: "Sora", sans-serif;
+        font-size: 11px;
+        font-weight: 700;
+        color: var(--blue);
+        background: var(--pale-blue);
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+
+      /* Highlight / callout boxes */
+      .callout {
+        border-radius: 10px;
+        padding: 16px 18px;
+        margin: 1.25rem 0;
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+      }
+      .callout-green {
+        background: #f0fbf5;
+        border: 1px solid #a8e6c2;
+      }
+      .callout-blue {
+        background: var(--pale-blue);
+        border: 1px solid rgba(58, 150, 240, 0.25);
+      }
+      .callout-yellow {
+        background: #fffbf0;
+        border: 1px solid #f5d98a;
+      }
+      .callout-icon {
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+      .callout-icon svg {
+        width: 18px;
+        height: 18px;
+        stroke-width: 2;
+        fill: none;
+      }
+      .callout-green .callout-icon svg {
+        stroke: #27ae60;
+      }
+      .callout-blue .callout-icon svg {
+        stroke: var(--blue);
+      }
+      .callout-yellow .callout-icon svg {
+        stroke: #d4850a;
+      }
+      .callout p {
+        font-size: 13.5px;
+        line-height: 1.65;
+        margin: 0 !important;
+        color: var(--navy);
+      }
+      .callout strong {
+        font-weight: 600;
+      }
+
+      /* Tool permission table */
+      .tool-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1rem 0;
+      }
+      .tool-table th {
+        font-family: "Sora", sans-serif;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+        color: var(--text-muted);
+        background: var(--off-white);
+        padding: 10px 14px;
+        text-align: left;
+        border-bottom: 1px solid var(--border);
+      }
+      .tool-table th:first-child {
+        border-radius: 8px 0 0 0;
+      }
+      .tool-table th:last-child {
+        border-radius: 0 8px 0 0;
+      }
+      .tool-table td {
+        font-size: 13.5px;
+        padding: 11px 14px;
+        border-bottom: 1px solid rgba(53, 130, 210, 0.08);
+        color: var(--text-body);
+        vertical-align: top;
+      }
+      .tool-table tr:last-child td {
+        border-bottom: none;
+      }
+      .tool-table tr:hover td {
+        background: #fafcff;
+      }
+
+      .badge {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 2px 9px;
+        border-radius: 100px;
+      }
+      .badge-green {
+        background: #e6f9ee;
+        color: #1d7d48;
+      }
+      .badge-red {
+        background: #e6f9ee;
+        color: #ff4120;
+      }
+      .badge-grey {
+        background: #eef2f6;
+        color: #5a7090;
+      }
+
+      /* Contact section special */
+      .contact-card {
+        background: linear-gradient(135deg, var(--navy), var(--navy-mid));
+        border-radius: 14px;
+        padding: 28px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 20px;
+        align-items: center;
+        margin-top: 1rem;
+      }
+      .contact-card h3 {
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 6px;
+      }
+      .contact-card p {
+        font-size: 13.5px;
+        color: var(--text-muted);
+        margin: 0 !important;
+      }
+      .contact-card a {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        background: linear-gradient(135deg, var(--blue), var(--accent));
+        color: white;
+        text-decoration: none;
+        border-radius: 9px;
+        padding: 11px 20px;
+        font-family: "Sora", sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        white-space: nowrap;
+        transition: opacity 0.2s;
+      }
+      .contact-card a:hover {
+        opacity: 0.85;
+      }
+      .contact-card a svg {
+        width: 14px;
+        height: 14px;
+        stroke: white;
+        fill: none;
+        stroke-width: 2.5;
+      }
+
+      /* ── FOOTER ── */
+      .page-footer {
+        background: var(--navy);
+        border-top: 1px solid var(--border);
+        padding: 32px 5%;
+        text-align: center;
+      }
+      .page-footer p {
+        font-size: 13px;
+        color: var(--text-muted);
+      }
+      .page-footer a {
+        color: var(--accent-light);
+        text-decoration: none;
+      }
+      .page-footer a:hover {
+        text-decoration: underline;
+      }
+
+      /* ── ANIMATIONS ── */
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(18px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* ── RESPONSIVE ── */
+      @media (max-width: 760px) {
+        .page-body {
+          grid-template-columns: 1fr;
+        }
+        .toc {
+          position: static;
+        }
+        .policy-section {
+          padding: 24px 20px;
+        }
+        .contact-card {
+          grid-template-columns: 1fr;
+        }
+        .zero-data-inner {
+          gap: 12px;
+        }
+        .zd-item {
+          border-right: none;
+          padding-right: 0;
+          margin-right: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <a href="#" class="nav-logo">
+        <div class="nav-logo-icon">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M1.5 8.5C5.4 3.5 18.6 3.5 22.5 8.5M5 12.5C7.8 9 16.2 9 19 12.5M9.5 16C10.8 14.5 13.2 14.5 14.5 16M12 20v.01"
+            />
+          </svg>
+        </div>
+        <div class="nav-logo-text">
+          Telecom Toolkit
+          <span>by Samskill Global Telecom</span>
+        </div>
+      </a>
+    </nav>
+
+    <!-- HERO BANNER -->
+    <div class="hero-banner">
+      <div class="hero-inner">
+        <div class="hero-chip">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
+          Privacy Policy
+        </div>
+        <h1>Your privacy is our<br /><span>starting point</span></h1>
+        <p>
+          The Telecom Toolkit app was designed from day one to collect nothing
+          about you. This policy explains what that means in practice and why
+          we believe it's the right way to build software.
+        </p>
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24">
+              <rect x="3" y="4" width="18" height="18" rx="2" />
+              <line x1="16" y1="2" x2="16" y2="6" />
+              <line x1="8" y1="2" x2="8" y2="6" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+            </svg>
+            Effective date: 20 May 2026
+          </div>
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+            Last updated: 20 May 2026
+          </div>
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+              />
+              <polyline points="14 2 14 8 20 8" />
+            </svg>
+            Version 1.0
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ZERO DATA BAR -->
+    <div class="zero-data-bar">
+      <div class="zero-data-inner">
+        <div class="zd-item">
+          <div class="zd-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <line x1="17" y1="11" x2="23" y2="11" />
+            </svg>
+          </div>
+          <div>
+            <div class="zd-label">No data collected</div>
+            <div class="zd-sub">Zero personal info stored</div>
+          </div>
+        </div>
+        <div class="zd-item">
+          <div class="zd-icon">
+            <svg viewBox="0 0 24 24">
+              <line x1="1" y1="1" x2="23" y2="23" />
+              <path
+                d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55M5 12.55a10.94 10.94 0 0 1 5.17-2.39M10.71 5.05A16 16 0 0 1 22.56 9M1.42 9a15.91 15.91 0 0 1 4.7-2.88M10.71 5.05A16 16 0 0 1 22.56 9M1.42 9a15.91 15.91 0 0 1 4.7-2.88M9.5 16C10.8 14.5 13.2 14.5 14.5 16"
+              />
+            </svg>
+          </div>
+          <div>
+            <div class="zd-label">No internet required</div>
+            <div class="zd-sub">Fully offline after install</div>
+          </div>
+        </div>
+        <div class="zd-item">
+          <div class="zd-icon">
+            <svg viewBox="0 0 24 24">
+              <rect x="3" y="11" width="18" height="11" rx="2" />
+              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+            </svg>
+          </div>
+          <div>
+            <div class="zd-label">No account needed</div>
+            <div class="zd-sub">No login, no sign-up</div>
+          </div>
+        </div>
+        <div class="zd-item">
+          <div class="zd-icon">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+            </svg>
+          </div>
+          <div>
+            <div class="zd-label">No permissions</div>
+            <div class="zd-sub">No camera, location, contacts</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN BODY -->
+    <div class="page-body">
+      <!-- CONTENT -->
+      <main class="content">
+        <!-- 1. OVERVIEW -->
+        <div class="policy-section" id="overview">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="8" x2="12" y2="12" />
+              <line x1="12" y1="16" x2="12.01" y2="16" />
+            </svg>
+            Overview
+          </div>
+          <h2>1. Overview</h2>
+          <p>
+            This Privacy Policy applies to the
+            <strong>Telecom Toolkit</strong> mobile application ("the
+            App"), published by <strong>Samskill Global Telecom</strong> ("we",
+            "our", or "us"), accessible at
+            <strong>samskillglobaltelecom.guru</strong>.
+          </p>
+          <p>
+            The Telecom Toolkit is a free, offline utility application designed
+            to help individuals, businesses, and telecom professionals with
+            everyday connectivity tasks such as estimating data usage,
+            converting units, calculating download times, and troubleshooting
+            connections.
+          </p>
+
+          <div class="callout callout-green">
+            <div class="callout-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+            </div>
+            <p>
+              <strong>The short version:</strong> The Telecom Toolkit does not
+              collect, transmit, store, or share any personal data about you
+              at any point or in any way. There is nothing to disclose beyond that
+              fact. The rest of this policy explains how and why.
+            </p>
+          </div>
+
+          <p>
+            By installing or using the App, you acknowledge that you have read
+            and understood this Privacy Policy.
+          </p>
+        </div>
+
+        <!-- 2. WHAT WE COLLECT -->
+        <div class="policy-section" id="what-we-collect">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+              />
+            </svg>
+            Data collection
+          </div>
+          <h2>2. What we collect</h2>
+
+          <div class="callout callout-blue">
+            <div class="callout-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <p>
+              <strong>We collect nothing.</strong> The Telecom Toolkit does not
+              collect any information about you, your device, your location,
+              your usage habits, or any inputs you enter into the App.
+            </p>
+          </div>
+
+          <p>Specifically, we do <strong>not</strong> collect:</p>
+          <ul>
+            <li>
+              Your name, email address, phone number, or any other identifying
+              information
+            </li>
+            <li>Your device's IMEI, advertising ID, or hardware identifiers</li>
+            <li>Your IP address or network information</li>
+            <li>Your geographic location or GPS coordinates</li>
+            <li>
+              The values, inputs, or results from any tools you use within the
+              App
+            </li>
+            <li>Crash reports, analytics events, or usage statistics</li>
+            <li>App session durations, screens visited, or buttons tapped</li>
+            <li>Cookies, tracking pixels, or browser fingerprints</li>
+          </ul>
+
+          <p>
+            There is no user account, no database of user records, and no server
+            that receives information from your copy of the App.
+          </p>
+        </div>
+
+        <!-- 3. HOW THE APP WORKS -->
+        <div class="policy-section" id="how-app-works">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"
+              />
+            </svg>
+            Technical
+          </div>
+          <h2>3. How the App works</h2>
+          <p>
+            The Telecom Toolkit is a <strong>fully offline application</strong>.
+            Once installed on your device, it requires no internet connection to
+            function. Here is a plain-language description of how it operates:
+          </p>
+
+          <ol>
+            <li>
+              <strong>All computation is local.</strong> Every calculation,
+              lookup, or decision-tree in the App runs entirely on your device's
+              processor. No data is sent to any server to produce a result.
+            </li>
+            <li>
+              <strong>All content is pre-loaded.</strong> The glossary,
+              troubleshooting guides, reference tables, and tool logic are
+              bundled inside the App at install time. There is no content
+              fetched from the internet.
+            </li>
+            <li>
+              <strong>No outbound connections.</strong> The App makes no network
+              requests at any time — not to Samskill's servers, not to any
+              analytics platform, not to any third-party service.
+            </li>
+            <li>
+              <strong>No background activity.</strong> The App does not run in
+              the background, does not schedule jobs, and does not phone home
+              when your device is idle.
+            </li>
+          </ol>
+
+          <div class="callout callout-yellow">
+            <div class="callout-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+                />
+                <line x1="12" y1="9" x2="12" y2="13" />
+                <line x1="12" y1="17" x2="12.01" y2="17" />
+              </svg>
+            </div>
+            <p>
+              <strong>Exception — initial install:</strong> Like any app,
+              downloading the Telecom Toolkit from the Google Play Store or
+              Apple App Store involves that store's own network and privacy
+              practices. Samskill has no visibility into or control over those
+              interactions. Please consult Google's or Apple's privacy policies
+              for details on what they may record during a download.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. PERMISSIONS -->
+        <div class="policy-section" id="permissions">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24">
+              <rect x="3" y="11" width="18" height="11" rx="2" />
+              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+            </svg>
+            Permissions
+          </div>
+          <h2>4. Device permissions</h2>
+          <p>
+            The Telecom Toolkit requests
+            <strong>zero device permissions</strong>. The table below lists
+            common permissions that apps often request and confirms that the
+            Telecom Toolkit does not use any of them.
+          </p>
+
+          <table class="tool-table">
+            <thead>
+              <tr>
+                <th>Permission</th>
+                <th>Requested?</th>
+                <th>Reason</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Location (GPS / network)</td>
+                <td><span class="badge badge-red">✗ Not requested</span></td>
+                <td>No location features exist in the App</td>
+              </tr>
+              <tr>
+                <td>Camera or microphone</td>
+                <td><span class="badge badge-red">✗ Not requested</span></td>
+                <td>No media capture features</td>
+              </tr>
+              <tr>
+                <td>Contacts or phone</td>
+                <td><span class="badge badge-red">✗ Not requested</span></td>
+                <td>No access to your contacts or call log</td>
+              </tr>
+              <tr>
+                <td>Storage / files</td>
+                <td><span class="badge badge-red">✗ Not requested</span></td>
+                <td>The App writes nothing to shared storage</td>
+              </tr>
+              <tr>
+                <td>Notifications</td>
+                <td><span class="badge badge-red">✗ Not requested</span></td>
+                <td>No push notifications are sent</td>
+              </tr>
+              <tr>
+                <td>Bluetooth / NFC</td>
+                <td><span class="badge badge-red">✗ Not requested</span></td>
+                <td>No wireless features</td>
+              </tr>
+              <tr>
+                <td>Internet access</td>
+                <td><span class="badge badge-red">✗ Not requested</span></td>
+                <td>App is fully offline; no network calls made</td>
+              </tr>
+              <tr>
+                <td>Advertising ID</td>
+                <td><span class="badge badge-red">✗ Not requested</span></td>
+                <td>No advertising or tracking of any kind</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>
+            You will not be prompted to grant any permissions when you open the
+            App for the first time, or at any other time.
+          </p>
+        </div>
+
+        <!-- 5. THIRD PARTIES -->
+        <div class="policy-section" id="third-parties">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+            Third parties
+          </div>
+          <h2>5. Third-party services</h2>
+          <p>
+            The Telecom Toolkit does <strong>not</strong> integrate with any
+            third-party service, SDK, library, or API that collects user data.
+            This includes, but is not limited to:
+          </p>
+          <ul>
+            <li>
+              Analytics platforms (e.g. Google Analytics, Firebase, Mixpanel,
+              Amplitude)
+            </li>
+            <li>Advertising networks or ad mediation platforms</li>
+            <li>Crash reporting tools (e.g. Crashlytics, Sentry)</li>
+            <li>Social media login or sharing SDKs</li>
+            <li>Remote configuration or A/B testing services</li>
+            <li>Cloud storage or sync services</li>
+            <li>
+              Payment processors (the App is free, with no in-app purchases)
+            </li>
+          </ul>
+
+          <div class="callout callout-blue">
+            <div class="callout-icon">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="8" x2="12" y2="12" />
+                <line x1="12" y1="16" x2="12.01" y2="16" />
+              </svg>
+            </div>
+            <p>
+              The only third-party involvement is the distribution platform
+              (Google Play or Apple App Store) used to download the App.
+              Samskill does not control, receive data from, or have a commercial
+              relationship with those platforms relating to user data. Their own
+              privacy policies govern those interactions.
+            </p>
+          </div>
+
+          <p>
+            We will never sell, rent, license, or share any user data with any
+            third party because there is no user data to share.
+          </p>
+        </div>
+
+        <!-- 6. LOCAL STORAGE -->
+        <div class="policy-section" id="local-storage">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <line x1="8" y1="21" x2="16" y2="21" />
+              <line x1="12" y1="17" x2="12" y2="21" />
+            </svg>
+            Local storage
+          </div>
+          <h2>6. Local storage on your device</h2>
+          <p>
+            Some features of the Telecom Toolkit may save data locally on your
+            device to improve your experience. For example, saving inputs you
+            last entered into a calculator so you don't have to re-enter them.
+            This is called "local storage" or "on-device storage."
+          </p>
+          <ul>
+            <li>
+              <strong>All locally stored data remains on your device.</strong>
+              It is never transmitted to Samskill or any other party.
+            </li>
+            <li>
+              <strong>You are in full control.</strong> You can clear this data
+              at any time by clearing the App's data or cache in your device
+              settings, or by uninstalling the App.
+            </li>
+            <li>
+              <strong>What may be stored locally:</strong> calculator inputs,
+              selected tool preferences, and theme settings (e.g. dark/light
+              mode). Nothing that identifies you personally.
+            </li>
+            <li>
+              <strong>What is never stored locally:</strong> your name, contact
+              information, or any information that could be linked to you as an
+              individual.
+            </li>
+          </ul>
+          <p>
+            Uninstalling the App permanently removes all locally stored data
+            from your device.
+          </p>
+        </div>
+
+        <!-- 7. CHILDREN -->
+        <div class="policy-section" id="children">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+            </svg>
+            Children
+          </div>
+          <h2>7. Children's privacy</h2>
+          <p>
+            The Telecom Toolkit is a general-purpose utility application
+            suitable for all ages. Because the App collects no data whatsoever,
+            there is no special risk to children using it.
+          </p>
+          <p>
+            We do not knowingly collect, and structurally cannot collect
+            personal information from children under the age of 13 (or the
+            applicable age of digital consent in your jurisdiction). If you
+            believe your child has somehow provided personal information through
+            the App, please contact us at
+            <a
+              href="mailto:support@samskillglobaltelecom.guru"
+              style="color: var(--blue); font-weight: 500"
+              >support@samskillglobaltelecom.guru</a
+            >, though we note that no mechanism exists within the App to receive
+            or store such information.
+          </p>
+        </div>
+
+        <!-- 8. YOUR RIGHTS -->
+        <div class="policy-section" id="your-rights">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+            Your rights
+          </div>
+          <h2>8. Your rights</h2>
+          <p>
+            Depending on your country or region, you may have rights under data
+            protection law: such as the right to access, correct, delete, or
+            port your personal data, or to object to certain processing.
+          </p>
+
+          <div class="callout callout-green">
+            <div class="callout-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+            </div>
+            <p>
+              <strong
+                >Because we collect no personal data, all of these rights are
+                already satisfied by default.</strong
+              >
+              There is no personal data to access, correct, export, or delete on
+              our end. Your data never reaches us.
+            </p>
+          </div>
+
+          <p>For residents of specific regions:</p>
+          <ul>
+            <li>
+              <strong>Nigeria (NDPR):</strong> The Nigeria Data Protection
+              Regulation applies to the processing of personal data. No personal
+              data is processed by this App.
+            </li>
+            <li>
+              <strong>European Union (GDPR):</strong> The General Data
+              Protection Regulation applies to personal data processing of EU
+              residents. No such processing occurs.
+            </li>
+            <li>
+              <strong>California (CCPA):</strong> The California Consumer
+              Privacy Act provides rights over personal information. No personal
+              information is collected or sold.
+            </li>
+          </ul>
+          <p>
+            If you have a privacy concern or request, please email us and we
+            will respond within 14 working days.
+          </p>
+        </div>
+
+        <!-- 9. CHANGES -->
+        <div class="policy-section" id="changes">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24">
+              <polyline points="23 4 23 10 17 10" />
+              <polyline points="1 20 1 14 7 14" />
+              <path
+                d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"
+              />
+            </svg>
+            Changes
+          </div>
+          <h2>9. Changes to this policy</h2>
+          <p>
+            We may update this Privacy Policy from time to time. For example,
+            if we add new features to the App or if legal requirements change.
+            When we do, we will:
+          </p>
+          <ul>
+            <li>Update the "Last updated" date at the top of this page</li>
+            <li>Post the revised policy at this URL</li>
+            <li>
+              Note any material changes in the App's release notes when we
+              publish an update
+            </li>
+          </ul>
+          <p>
+            The core principle that the Telecom Toolkit does not collect your
+            personal data is a fundamental design decision, not a policy that
+            changes with our business needs. Any future version of this App that
+            collects data will be clearly disclosed, and this policy will be
+            updated accordingly before or at the same time as any such change.
+          </p>
+          <p>
+            Your continued use of the App after any changes to this policy
+            constitutes acceptance of those changes.
+          </p>
+        </div>
+
+        <!-- 10. CONTACT -->
+        <div class="policy-section" id="contact">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"
+              />
+            </svg>
+            Contact
+          </div>
+          <h2>10. Contact us</h2>
+          <p>
+            If you have any questions, concerns, or requests relating to this
+            Privacy Policy or the Telecom Toolkit app, please reach out to us.
+            We take every privacy query seriously and will respond promptly.
+          </p>
+
+          <div class="contact-card">
+            <div>
+              <h3>Samskill Global Telecom — Privacy Team</h3>
+              <p>
+                support@samskillglobaltelecom.guru &nbsp;·&nbsp; Lagos, Nigeria
+                &nbsp;·&nbsp; Response within 14 days
+              </p>
+            </div>
+            <a href="mailto:support@samskillglobaltelecom.guru">
+              Send an email
+              <svg viewBox="0 0 24 24">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+          </div>
+
+          <p style="margin-top: 1.25rem; font-size: 13.5px; color: #6a88a8">
+            For general support inquiries about the Samskill broadband or
+            telecom services, please visit
+            <a
+              href="../index.html"
+              style="color: var(--blue); font-weight: 500"
+              >samskillglobaltelecom.guru</a
+            >
+            instead.
+          </p>
+        </div>
+      </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="page-footer">
+      <p>
+        © 2026 Samskill Global Telecom ·
+        <a href="samskill_landing_page.html">samskillglobaltelecom.guru</a> ·
+        Telecom Toolkit Privacy Policy v1.0
+      </p>
+    </footer>
+
+    <script>
+      // Active TOC link on scroll
+      const sections = document.querySelectorAll(".policy-section");
+      const tocLinks = document.querySelectorAll(".toc-list a");
+
+      const obs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              tocLinks.forEach((a) => a.classList.remove("active"));
+              const id = entry.target.id;
+              const active = document.querySelector(
+                `.toc-list a[href="#${id}"]`,
+              );
+              if (active) active.classList.add("active");
+            }
+          });
+        },
+        { rootMargin: "-20% 0px -60% 0px" },
+      );
+
+      sections.forEach((s) => obs.observe(s));
+    </script>
+  </body>
+</html>
